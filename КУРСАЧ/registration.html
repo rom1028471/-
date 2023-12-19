@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современные процессоры</title>
+    <link rel="icon" href="./Media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/style_reg.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/footer.css">
+    <script defer src="./Js/humbr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <header>
+    <a href="index.html">
+        Современные процессоры
+    </a>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li class="small">Главная</li>
+            </a>
+            <a href="#footer">
+                <li class="small">Контакты</li>
+            </a>
+            <a href="catalog.html">
+                <li class="small">Каталог</li>
+            </a>
+            <a href="comparis.html">
+                <li class="small">Сравнение</li>
+            </a>
+            <a href="whatis.html">
+                <li class="small">Справочная</li>
+            </a>
+        </ul>
+        <a href="login.html">
+            <button class="login_button small">Войти</button>
+        </a>
+    </nav>
+    <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
+  </header>
+
+
+  
+      <div class="main">
+        <section>
+          <div class="box">
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:4;"></div>
+        
+            <div class="contain_form">
+              <div class="form">
+                <div class="captcha-window">
+                  <span id="captcha-text">uaiVO</span>
+                  <input type="text" class="captcha-input" placeholder="Введите капчу">
+                  <button class="captcha_btn button-s">Подтвердить</button>
+                </div>
+  
+  
+                <h2>Регистрация</h2>
+                <form action="./index.html" onsubmit="return validateForm(event)">
+
+
+                  <div class="input__box">
+                    <input type="text" placeholder="Фамилия Имя Отчество">
+                  </div>
+                  <div class="input__box">
+                    <input type="text" placeholder="Ваша дата рождения" onfocus="(this.type='date')">
+                  </div>
+                  <div class="input__box">
+                    <input type="text" placeholder="Ваша электронная почта">
+                  </div>
+
+                  <div class="input__box">
+                    <input type="text" placeholder="Придумайте логин">
+                  </div>
+        
+                  <div class="input__box">
+                    <input type="password" placeholder="Придумайте пароль">
+                  </div>
+                  
+                  <div class="input__box">
+                  <span class="captcha">
+                    <div class="check_container">
+                        <input type="checkbox" id="check" readonly="readonly">
+                    </div>
+                    <span>Я не робот</span>
+                  </span>
+                  <a href="./login.html" style="color: rgb(0, 192, 226);">Уже есть аккаунт?</a>
+                  </div>
+                  <label for="newsletter" class="lnwslett" >Подписаться на новости:</label>
+							    <input type="checkbox" class="inwslett" id="newsletter" name="newsletter" checked >
+                  <div class="input__box">
+                    <button type="submit" class="login_btn button-s" disabled>Войти</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+      </div>
+      <script src="./Js/script_reg.js"></script>
+      <footer id="footer">
+        <div class="footer-container">
+        
+        
+          <div class="about-us">
+            <h2>О сайте</h2>
+            <p><strong>Процессоры - это круто!</strong></p>
+            <p>Данный сайт сможет заинтересовать любого и рассказать многое о всех самых совсременных процессорах</p>
+    
+          </div>
+    
+          <div class="navigation">
+            <h2>Навивгация</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="comparis.html">Сравнения</a></li>
+              <li><a href="whatis.html">Узнать больше</a></li>
+            </ul>
+          </div>
+    
+    
+    
+          <div class="contact-info">
+            <h2>Наши контакты</h2>
+            <div class="location">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+              </svg>
+              <p href="https://yandex.ru/maps/-/CDqKAEjI">пр. Вернадского, 78 Москва, 119454</p>
+            </div>
+            <div class="phone">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+              </svg>
+              <p>+7 (000) 000 00 00</p>
+            </div>
+            <div class="email">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+              </svg>
+              <p>example@example.com</p>
+            </div>
+          </div>
+    
+          <div class="footer-col">
+            <h2>Подпишитесь!</h2>
+            <div id="socials">
+                <a href="https://www.youtube.com/">
+                    <div id="yt">
+                        <i class='bx bxl-youtube'></i>
+                    </div>
+                </a>
+                <a href="https://t.me/telegram">
+                    <div id="tg">
+                        <i class='bx bxl-telegram' ></i>
+                    </div>
+                </a>
+                <a href="https://www.vk.com/">
+                    <div id="vk">
+                        <i class='bx bxl-vk' ></i>
+                    </div>
+                </a>
+            </div>
+          </div>
+    
+        </div>
+        <div class="copyright">
+            <p>© 2023 РТУ МИРЭА. Все права защищены.</p>
+        </div>
+      </footer>
+  </body>
+</html>

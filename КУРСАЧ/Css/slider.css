@@ -1,0 +1,93 @@
+.slider-wrapper {
+    overflow: hidden; 
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+    max-width: 100%; 
+    background: #000;
+    position: relative; 
+  }
+  
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide{
+    margin-top: 225px; 
+  }
+  .swiper-slide a{
+    color:white
+  }
+  
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    height: 100%;
+    width: 130%; 
+    background-image: url("../Media/images/background1.jpg");
+    filter: blur(4px);
+  }
+  
+  .parallax-slider__title,
+  .parallax-slider__text {
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    font-size: 3rem; 
+    max-width: 100%; 
+    text-align: left;
+    margin-left: 8vw; 
+  }
+
+
+  .parallax-slider__title{
+    margin-bottom: 2em; 
+
+    font-size: 4rem;
+  }
+  /* Медиа-запрос для адаптивности */
+  @media only screen and (max-width: 768px) {
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+    .parallax-slider__title,
+    .parallax-slider__text {
+      font-size: 2rem; 
+    }
+  }
+  .swiper-slide  a {
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 25%;
+    max-width: 50%;
+    font-size: 1rem;
+  }
+.swiper-slide  span {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 25%;
+  max-width: 50%;
+}
+.swiper-slide  h1 {
+  display: flex;
+  justify-content: center;
+  margin-right: 50%;
+  max-width: 50%;
+  font-size: 4rem;
+}
